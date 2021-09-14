@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 1.6rem;
+    background: url(./images/pattern-background-desktop.svg),hsl(225, 100%, 94%);
+    
+    background-repeat:no-repeat;
+    height: 100vh;
+}
+
+.hero{
+    max-width: 35rem;
+    margin: 0 auto;
+    padding: 10rem 0;
+    
+}
+.grid-card{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.hero-img{
+    height: 100%;
+    width: 100%;
+    border-top-left-radius: 0.9rem;
+    border-top-right-radius: 0.9rem;
+}
+.card-content{
+    padding: 3.2rem;
+    text-align: center;
+    background-color: #fff;
+    border-bottom-left-radius: 0.9rem;
+    border-bottom-right-radius: 0.9rem;
+}
+.head-content{
+    font-weight: 900;
+    letter-spacing: 0.5px;
+    margin-bottom: 1.2rem;
+}
+.p-content{
+    font-weight: 500;
+    font-size: 1.4rem;
+    line-height: 1.5;
+    margin-bottom: 2rem;
+    color: hsl(224, 23%, 55%);
+}
+.flex-pricing{
+    display: flex;
+    gap: 1.2rem;
+    align-items: center;
+    padding: 1.6rem 1.6rem ;
+    background-color: hsl(225, 100%, 98%);
+    margin-bottom: 2rem;
+    border-radius: 0.9rem;
+}
+.flex-plan{
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    
+}
+.plan{
+    font-weight: 900;
+    color: #333;
+    font-size: 1rem;
+
+}
+.price-plan{
+    font-weight: 500;
+    color: hsl(224, 23%, 55%) ;
+    font-size: 1rem;
+    letter-spacing: 0.75px;
+}
+.change{
+    margin-left: 7.8rem;
+    font-size: 1.2rem;
+    color: hsl(245, 75%, 52%);
+    font-weight: 700;
+
+}
+.pay{
+    display: block;
+    background-color: hsl(245, 75%, 52%);
+    color: #fff;
+    text-decoration: none;
+    padding: 1rem;
+    border-radius: 1.1rem;
+    font-size: 1.2rem;
+    font-weight: 700;
+    letter-spacing: 0.75px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.cancel{
+    display: block;
+    margin-top: 1.6rem;
+    text-decoration: none;
+    color: hsl(224, 23%, 55%);
+    font-size: 1.2rem;
+    font-weight: 700;
+    
+}
+@media (max-width:23em){
+    body{
+        background: hsl(225, 100%, 94%);
+    }
+    html{
+        font-size: 45%;
+        
+    }
+    .hero{
+        max-width: 40rem;
+        margin: 0 auto;
+    }
+    .cancel {
+        margin-top: 2rem;
+        text-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    }
+}
